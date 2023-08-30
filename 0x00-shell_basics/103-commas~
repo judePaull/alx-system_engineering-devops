@@ -1,0 +1,3 @@
+#!/bin/bash
+ls -1A | { printf "./\n../\n"; grep '^[0-9A-Za-z]' | sort; } | paste -sd ',' - ; echo
+
